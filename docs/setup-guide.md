@@ -2,7 +2,7 @@
 
 ## Stage 1 — Prepare the SD card
 
-1. Format the microSD card as **FAT32** (8–16 GB, SDHC).
+1. Format the microSD card as **FAT32** (16 GB, SDHC).
 2. Download the Evil-M5Project repo: https://github.com/7h30th3r0n3/Evil-M5Project (Code → Download ZIP).
 3. Copy the SD-card folder contents into a folder named **`evil`** at the SD card root → `SD:/evil/...` (mandatory: startup images and captive-portal sites live there).
 
@@ -40,20 +40,42 @@ arduino-cli upload --fqbn m5stack:esp32:m5stack_cardputer --port COMXX \
   Evil-Cardputer-v1-5-4.ino
 ```
 
-## Stage 4 — Attach the Cap (NFC + Sub-GHz)
+## Stage 4 — Attach the Hydra (Sub-GHz + 2.4 GHz) and PN532 (NFC)
 
-1. Power off. Press the Cap onto the ADV's top header. Screw on the antenna (finger-tight).
-2. Insert SD, power on, boot **Bruce**.
-3. **Config → RF / RFID module** → select the Cap (CC1101 + ST25R NFC).
-   - Known bug (Bruce 1.16.x): CC1101 pin selection may reset on reboot — re-select in Config; NFC settings persist.
-4. Test NFC: RFID/NFC menu → **Read tag** on my own blank tag or Octopus card (FeliCa, read-only UID).
-5. Test Sub-GHz: RF menu → **Scan/Copy** on my own 433 MHz remote.
+### Hydra RF 424
+
+1. Power the Cardputer ADV off.
+2. Mount the Hydra onto the ADV's top header per Pingequa's instructions; screw on the antenna(s) finger-tight.
+3. Insert the SD card, power on, boot **Bruce**.
+4. In Bruce, open **Config → RF module** and select the CC1101 (and NRF24 for 2.4 GHz features). If a selection doesn't persist after reboot, re-select it in Config.
+5. Test Sub-GHz: RF menu → **Scan/Copy** — capture a signal from your own 433 MHz remote.
+
+### PN532 (NFC)
+
+1. On the PN532 board, set the **DIP switches to I2C mode** (check the silkscreen).
+2. Power off. Connect the PN532 to the Cardputer's Grove port with a Grove cable:
+
+   | Grove wire | PN532 pin |
+   | --- | --- |
+   | Red (5V) | VCC |
+   | Black (GND) | GND |
+   | Yellow (SDA) | SDA |
+   | White (SCL) | SCL |
+
+3. Boot **Bruce** → **Config → RFID module** → select PN532.
+4. Test: RFID/NFC menu → **Read tag** on your own blank tag or your own Octopus card (FeliCa, read-only UID check).
+5. If nothing is detected: re-check DIP switches and SDA/SCL order — those cause nearly all failures.
+
+### Configuration note (pin budget)
+
+- **RF/NFC session:** Hydra mounted + PN532 on Grove. If Bruce misbehaves with both attached (shared Grove pins), unplug the PN532 while using the Hydra — nothing is soldered.
+- **Wardriving session:** remove the Hydra, connect the GPS unit (EXT header G13/G15 per the wardriving firmware's docs). Wardriving is pure WiFi/BLE + GPS — the Hydra contributes nothing there.
 
 ## Stage 5 — Safe first tests
 
-1. **WiFi scan** of my own network (Evil-M5Project).
-2. **Captive portal** on my own test SSID; connect with my own phone.
-3. **NFC** read → write → emulate my own tags.
-4. **IR** blast on my own TV.
-5. **Sub-GHz** capture/replay my own remote.
+1. **WiFi:** set up a spare router (or your own router) as the target. Run Scan WiFi → Select Network in Evil-M5Project against *your own* network only.
+2. **Captive portal:** start the portal on your own test SSID and connect with your own phone to see the flow.
+3. **NFC:** read, then write, then emulate your own blank NTAG215/MIFARE tags in Bruce.
+4. **IR:** try the TV-B-Gone-style IR blast on your own TV.
+5. **Sub-GHz:** capture and replay *your own* remote (e.g., a cheap 433 MHz outlet remote bought for this purpose).
 6. **Handshake capture** on my own router, then crack my own password.

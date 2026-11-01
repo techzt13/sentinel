@@ -11,7 +11,8 @@ own remote and its own app.
 
 ### The product
 
-One palm-sized device, ~$80, that answers the three questions every homeowner has:
+One palm-sized device, ~$93 in off-the-shelf parts, that answers the three questions
+every homeowner has:
 
 1. **"What's on my network?"** — full LAN + port scan finds every device, including
    the forgotten smart plug with a wide-open port. A channel-congestion scan explains
@@ -62,7 +63,7 @@ Needs a portable audit kit for coursework, CTFs, and homelab practice.
 ### The educator / club leader
 
 Slides don't teach 'don't trust public WiFi'. One live captive-portal demo on a test
-router does. Class sets are affordable at ~$80/unit.
+router does. Class sets are affordable at under $100/unit.
 
 > *"The most persuasive cybersecurity lesson is watching your own password appear on the attacker's screen."*
 
@@ -75,11 +76,11 @@ off-the-shelf parts, two large open-source communities, endless room to mod.
 
 ## Elevator pitch
 
-*"A pocket-sized, multi-radio security research device for ~$80 — half the price of a
-Flipper Zero — that audits WiFi networks, reads and emulates NFC cards, captures
-sub-GHz remotes, and blasts IR, all from a keyboard-driven computer that fits in your
-palm. It dual-boots two open-source firmwares, and every part is off-the-shelf with no
-soldering."*
+*"A pocket-sized, multi-radio security research device for under $100 — half the price
+of a Flipper Zero — that audits WiFi networks, reads and emulates NFC cards, captures
+sub-GHz remotes, scans 2.4 GHz, and blasts IR, all from a keyboard-driven computer that
+fits in your palm. It dual-boots two open-source firmwares, and every part is
+off-the-shelf with no soldering."*
 
 ## One-line value proposition
 
@@ -94,6 +95,6 @@ it."*
   features power defensive use: deauth detection, skimmer detection, rogue-AP hunting.
 - **"Why not just buy a Flipper?"** — Cost, a real keyboard, better WiFi capability,
   and the build itself is the learning. A Flipper is a product; this is a project.
-- **"What's the weakness?"** — No 125 kHz RFID, single radio means one band at a time,
-  and there's a known firmware bug on the Cap's config persistence. I can name them
-  because I actually built it.
+- **"What's the weakness?"** — No 125 kHz RFID, one radio band at a time, and the GPS
+  can't run simultaneously with the RF board (pin budget — I run them as two
+  configurations). I can name these because I actually built it.
