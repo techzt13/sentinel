@@ -1,0 +1,10 @@
+Part,SKU / Version,Qty,Unit Price (USD),Line Total (USD),Category,Purpose,Link,Notes
+M5Stack Cardputer Adv Version (ESP32-S3),K182-ADV,1,29.90,29.90,Core,Main unit — keyboard / screen / IR emitter / WiFi+BLE,https://he.aliexpress.com/item/1005009876230695.html,"M5Stack official AliExpress listing; also on shop.m5stack.com. ADV model required for the Cap."
+Cap CC1101 & NFC for Cardputer Adv,U219,1,18.95,18.95,Radio,Sub-GHz 315/433/868/915 MHz (CC1101) + NFC ST25R3916 (FeliCa + card emulation),https://www.aliexpress.com/item/1005012776339015.html,"Snaps onto ADV header; supported by Bruce firmware; 433 MHz ISM is correct for Hong Kong."
+GPS/BDS Unit with SMA Antenna (AT6668),U223,1,12.50,12.50,Positioning,Wardriving with Wigle-compatible CSV output,https://shop.m5stack.com/search?q=GPS%2FBDS+Unit,"Grove (UART). Ships with antenna."
+Mini Infrared Emitter & Receiver Unit,U002,1,3.95,3.95,IR,IR code capture / learning (Cardputer already has a built-in IR emitter),https://shop.m5stack.com/search?q=Mini+Infrared+Emitter,Grove (GPIO pair).
+I2C Hub 1-to-6 Expansion Unit v2.1 with DIP Switch (PCA9548A),U006-B,1,5.95,5.95,Expansion,Splits the single Grove port for future I2C add-ons,https://shop.m5stack.com/search?q=I2C+Hub+1+to+6,Optional for this build — Cap does not use Grove.
+Connector Grove to 4 Pin (10pcs),A099,1,4.50,4.50,Wiring,No-solder adapters for future GPIO modules,https://www.electromaker.io/shop/product/connector-grove-to-4-pin-10pcs,Optional — M5 units include their own Grove cables.
+microSD card 8–16 GB (SDHC),Generic,1,5.00,5.00,Storage,REQUIRED by both firmwares — evil/ folder + firmware .bin files,https://shop.m5stack.com/search?q=microsd,"Must be FAT32, max 16 GB. Any brand; often already on hand."
+,,,,,,,,
+TOTAL (USD),,,,80.75,,,,
