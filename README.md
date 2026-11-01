@@ -38,6 +38,7 @@ Managed by **M5Launcher** so either firmware can be booted from the SD card.
 
 ## Docs
 
+- [Pitch](docs/pitch.md) — why someone would buy this (smart-home lead angle)
 - [Setup guide](docs/setup-guide.md) — SD prep → M5Launcher → firmwares → Cap → first tests
 - [Project ideas](docs/project-ideas.md) — what this build can actually do
 - [Rules](docs/rules.md) — the non-negotiables
