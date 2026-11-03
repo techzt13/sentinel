@@ -1,4 +1,6 @@
-# Pitch — Cardputer "Flipper-Style" Build
+# Pitch — Sentinel
+
+*"Sentinel — a ~$93 pocket guardian that audits, maps, and runs your smart home."*
 
 ## Lead angle: the smart-home guardian
 
@@ -11,16 +13,16 @@ own remote and its own app.
 
 ### The product
 
-One palm-sized device, ~$93 in off-the-shelf parts, that answers the three questions
-every homeowner has:
+Sentinel is one palm-sized device, ~$93 in off-the-shelf parts, that answers the three
+questions every homeowner has:
 
 1. **"What's on my network?"** — full LAN + port scan finds every device, including
    the forgotten smart plug with a wide-open port. A channel-congestion scan explains
    the 8pm slowdown.
-2. **"Is my network actually secure?"** — it attacks *your own* network the way a real
-   attacker would: captures the handshake, tries to crack the password, tests deauth
-   resistance. If your own device can break in, you know to fix it *before* someone
-   else tries.
+2. **"Is my network actually secure?"** — Sentinel attacks *your own* network the way a
+   real attacker would: captures the handshake, tries to crack the password, tests
+   deauth resistance. If your own device can break in, you know to fix it *before*
+   someone else tries.
 3. **"Can I get rid of this pile of remotes?"** — captures and replays 433 MHz outlets,
    fans, and LED strips, plus IR TV/AC. One device becomes the universal remote for the
    whole apartment. Custom NFC tags by the door: tap to join guest WiFi, tap for
@@ -28,21 +30,21 @@ every homeowner has:
 
 ### The kicker
 
-No subscription, no cloud service, no account, no data leaves your home. It works
+No subscription, no cloud service, no account, no data leaves your home. Sentinel works
 entirely offline — which, for a *security* product, is the point.
 
 ### Taglines
 
-- *"A security audit and a universal remote in your pocket — for less than a nice dinner out."*
-- *"Your smart home is talking. This lets you finally listen."*
-- *"Find the holes in your own network before someone else does."*
+- *"Sentinel: a security audit and a universal remote in your pocket — for less than a nice dinner out."*
+- *"Your smart home is talking. Sentinel lets you finally listen."*
+- *"Sentinel finds the holes in your own network before someone else does."*
 
 ### The demo (what wins the room)
 
 Plug it in, scan **your own hotspot** — the device list appears live. Then race the
 "crack my own WiFi" demo against a deliberately weak password like `homerouter123`.
-It cracks in seconds. Then: *"That could be your parents' router. Now you know why it
-matters."*
+It cracks in seconds. Then: *"That could be your parents' router. Sentinel is how you
+check."*
 
 ---
 
@@ -52,7 +54,7 @@ matters."*
 
 Wants hands-on cybersecurity, but a Flipper Zero is $170+ and courses are theory.
 
-> *"A Flipper Zero teaches you to press buttons. This teaches you how the buttons work."*
+> *"A Flipper Zero teaches you to press buttons. Building Sentinel teaches you how the buttons work."*
 
 ### The IT student / junior pentester
 
@@ -76,11 +78,11 @@ off-the-shelf parts, two large open-source communities, endless room to mod.
 
 ## Elevator pitch
 
-*"A pocket-sized, multi-radio security research device for under $100 — half the price
-of a Flipper Zero — that audits WiFi networks, reads and emulates NFC cards, captures
-sub-GHz remotes, scans 2.4 GHz, and blasts IR, all from a keyboard-driven computer that
-fits in your palm. It dual-boots two open-source firmwares, and every part is
-off-the-shelf with no soldering."*
+*"Sentinel is a pocket-sized, multi-radio security research device for under $100 —
+half the price of a Flipper Zero — that audits WiFi networks, reads and emulates NFC
+cards, captures sub-GHz remotes, scans 2.4 GHz, and blasts IR, all from a
+keyboard-driven computer that fits in your palm. It dual-boots two open-source
+firmwares, and every part is off-the-shelf with no soldering."*
 
 ## One-line value proposition
 
@@ -90,11 +92,11 @@ it."*
 
 ## Anticipated Q&A
 
-- **"Isn't this just a hacking tool?"** — It's a security *auditing* tool. Every demo
-  runs against my own lab network; the repo has an explicit rules page. The same
+- **"Isn't this just a hacking tool?"** — Sentinel is a security *auditing* tool. Every
+  demo runs against my own lab network; the repo has an explicit rules page. The same
   features power defensive use: deauth detection, skimmer detection, rogue-AP hunting.
 - **"Why not just buy a Flipper?"** — Cost, a real keyboard, better WiFi capability,
-  and the build itself is the learning. A Flipper is a product; this is a project.
+  and the build itself is the learning. A Flipper is a product; Sentinel is a project.
 - **"What's the weakness?"** — No 125 kHz RFID, one radio band at a time, and the GPS
   can't run simultaneously with the RF board (pin budget — I run them as two
   configurations). I can name these because I actually built it.
