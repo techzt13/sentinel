@@ -7,8 +7,9 @@ Mini Infrared Emitter & Receiver Unit,U002,1,3.95,3.95,IR,IR code capture / lear
 SanDisk Ultra microSDHC 16GB UHS-I A1,SDSQUAR-016G,1,5.00,5.00,Storage,REQUIRED by both firmwares — evil/ folder + firmware .bin files,https://shop.pegasus.hk/products/217478,"SDHC 16 GB — format FAT32."
 Grove 125KHz RFID Reader (UART),Seeed 101020070,1,11.90,11.90,RFID,125 kHz RFID read (EM4100 badges/fobs) — closes last gap vs Flipper Zero,https://www.seeedstudio.com/Grove-125KHz-RFID-Reader.html,"UART on Grove port — session-swap device. Price approx; confirm at checkout."
 4Pin Buckled Grove Cable 20cm (5pcs),M5Stack A-cable,2,2.50,5.00,Wiring,Spare Grove cables — PN532 ships without one,https://shop.m5stack.com/products/4pin-buckled-grove-cable?variant=32050917081178,"2 packs. Price approx; confirm at checkout."
+ToF Sensor Unit (VL53L0X),U010,1,8.50,8.50,Sensor,Laser time-of-flight distance — presence/proximity detection for smart-home demos,https://shop.m5stack.com/products/tof-sensor-unit?variant=16804759076954,"I2C on Grove port — shares bus with PN532. Price approx; confirm at checkout."
 ,,,,,,,,
-TOTAL (USD),,,,110.24,,,,
+TOTAL (USD),,,,118.74,,,,
 Dropped items,,,,,,,,
 I2C Hub 1-to-6 (PCA9548A),U006-B,0,5.95,0,Expansion,DROPPED — I2C-only; cannot split UART/GPIO for GPS/IR,https://shop.m5stack.com/products/i2c-hub-1-to-6-expansion-unit-v2-1-with-dip-switch-pca9548a?variant=45809830953217,Only useful for future pure-I2C sensors.
 Connector Grove to 4 Pin (10pcs),A099,0,4.50,0,Wiring,DROPPED — passive adapters; M5 units ship with their own Grove cables,https://shop.m5stack.com/products/connector-grove-to-4-pin-10pcs?variant=39414310437036,
