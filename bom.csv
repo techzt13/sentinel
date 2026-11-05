@@ -9,8 +9,10 @@ Grove 125KHz RFID Reader (UART),Seeed 101020070,1,11.90,11.90,RFID,125 kHz RFID 
 4Pin Buckled Grove Cable 20cm (5pcs),M5Stack A-cable,2,2.50,5.00,Wiring,Spare Grove cables — PN532 ships without one,https://shop.m5stack.com/products/4pin-buckled-grove-cable?variant=32050917081178,"2 packs. Price approx; confirm at checkout."
 ToF Sensor Unit (VL53L0X),U010,1,8.50,8.50,Sensor,Laser time-of-flight distance — presence/proximity detection for smart-home demos,https://shop.m5stack.com/products/tof-sensor-unit?variant=16804759076954,"I2C on Grove port — shares bus with PN532. Price approx; confirm at checkout."
 ENV Pro Unit (BME688),U001-B,1,24.50,24.50,Sensor,"Temperature / humidity / pressure / gas (VOC) — air-quality monitoring, smart-home pitch",https://shop.m5stack.com/products/env-pro-unit-with-temperature-humidity-pressure-and-gas-sensor-bme688,"I2C on Grove port — shares bus with PN532/ToF. Price approx; confirm at checkout."
+Grove LoRa-E5 (STM32WLE5JC),Seeed 113020091,1,9.90,9.90,Radio,LoRa long-range comms — Meshtastic off-grid mesh (pairs with GPS for position sharing),https://www.seeedstudio.com/Grove-LoRa-E5-STM32WLE5JC-p-4867.html,"Grove UART (AT commands) — session-swap. AS923 band plan for HK. Price approx; confirm at checkout."
 ,,,,,,,,
-TOTAL (USD),,,,143.24,,,,
+TOTAL (USD),,,,153.14,,,,
 Dropped items,,,,,,,,
 I2C Hub 1-to-6 (PCA9548A),U006-B,0,5.95,0,Expansion,DROPPED — I2C-only; cannot split UART/GPIO for GPS/IR,https://shop.m5stack.com/products/i2c-hub-1-to-6-expansion-unit-v2-1-with-dip-switch-pca9548a?variant=45809830953217,Only useful for future pure-I2C sensors.
 Connector Grove to 4 Pin (10pcs),A099,0,4.50,0,Wiring,DROPPED — passive adapters; M5 units ship with their own Grove cables,https://shop.m5stack.com/products/connector-grove-to-4-pin-10pcs?variant=39414310437036,
+LoRa Module 13.2 (SX1262),M5Stack M-module,0,29.50,0,Radio,DROPPED — M5-Bus stackable module; Cardputer has no M5-Bus port,https://shop.m5stack.com/products/lora-module-13-2-sx1262,Replaced by Grove LoRa-E5 (Grove/UART interface).
